@@ -4,19 +4,19 @@ export const constantRoute = [
     // 登录
     path: '/login',
     name: 'login',
-    component: () => import('@/views/Login.vue'),
+    component: () => import('@/views/login/Login.vue'),
   },
   {
     // 首页
     path: '/',
     name: 'layout',
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/home/Home.vue'),
   },
   {
     // 404
     path: '/404',
     name: '404',
-    component: () => import('@/views/404.vue'),
+    component: () => import('@/views/error/404.vue'),
   },
   {
     // 任意路由

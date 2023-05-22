@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import router from './router'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import store from './store'
 // 全局样式
 import '@/style/index.scss'
 // 国际化
@@ -16,6 +17,7 @@ import App from '@/App.vue'
 
 const app = createApp(App)
 app.use(router)
+app.use(store)
 // 注册全局组件
 app.use(globalComponent)
 app.use(ElementPlus, {

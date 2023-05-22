@@ -7,9 +7,9 @@ import type {
 
 // 登录
 export const reqLogin = (data: loginForm) => {
-  return http.post<loginResponseData>('/user/login')
+  return http.post<any, loginResponseData>('/user/login', data)
 }
 // 获取用用户信息
 export const reqUserInfo = () => {
-  return http.get<userResponseData>('/user/info')
+  return http.get<any, userResponseData>('/user/info')
 }
